@@ -374,12 +374,12 @@ select:disabled {
   display: none !important;
 }
 
-button,
+/*button,
 [type=button],
 [type=reset],
 [type=submit] {
   -webkit-appearance: button;
-}
+}*/
 button:not(:disabled),
 [type=button]:not(:disabled),
 [type=reset]:not(:disabled),
@@ -434,10 +434,10 @@ legend + * {
   height: auto;
 }
 
-[type=search] {
+/*[type=search] {
   outline-offset: -2px;
   -webkit-appearance: textfield;
-}
+}*/
 
 /* rtl:raw:
 [type="tel"],
@@ -447,23 +447,23 @@ legend + * {
   direction: ltr;
 }
 */
-::-webkit-search-decoration {
+/*::-webkit-search-decoration {
   -webkit-appearance: none;
-}
+}*/
 
 ::-webkit-color-swatch-wrapper {
   padding: 0;
 }
 
-::-webkit-file-upload-button {
+/*::-webkit-file-upload-button {
   font: inherit;
   -webkit-appearance: button;
-}
+}*/
 
-::file-selector-button {
+/*::file-selector-button {
   font: inherit;
   -webkit-appearance: button;
-}
+}*/
 
 output {
   display: inline-block;
@@ -2270,8 +2270,8 @@ textarea.form-control-lg {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  -webkit-print-color-adjust: exact;
-  color-adjust: exact;
+  /*-webkit-print-color-adjust: exact;
+  color-adjust: exact;*/
   print-color-adjust: exact;
 }
 .form-check-input[type=checkbox] {

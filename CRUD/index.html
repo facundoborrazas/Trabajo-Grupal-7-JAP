@@ -32,7 +32,7 @@
                             <h6>Ingresar nuevo registro</h6>
                             <input type="text" id="inputPostNombre" class="form-control my-1" placeholder="Nombre">
                             <input type="text" id="inputPostApellido" class="form-control my-1" placeholder="Apellido">
-                            <button id="btnPost" class="btn btn-success position-absolute bottom-0 mb-3" disabled>
+                            <button id="btnPost" class="btn btn-success position-absolute bottom-0 mb-3">
                                 Agregar</button>
                         </div>
                     </div>
@@ -43,7 +43,7 @@
                             <h6>Modificar registro</h6>
                             <input type="number" id="inputPutId" class="form-control"
                                 placeholder="ID del registro a modificar">
-                            <button id="btnPut" class="btn btn-warning position-absolute bottom-0 mb-3" disabled>
+                            <button id="btnPut" class="btn btn-warning position-absolute bottom-0 mb-3">
                                 Modificar</button>
                         </div>
                     </div>
@@ -86,7 +86,31 @@
             </div>
         </div>
     </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modificar Registro</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <label>Nombre: 
+                        <input type="text" value="" placeholder="Nombre" id="inputEditNombre">
+                    </label>
+                    <label class="mt-2">Apellido: 
+                        <input type="text" value="" placeholder="Apellido" id="inputEditApellido">
+                    </label>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="scripts/bootstrap.bundle.js"></script>
+    <script src="./scripts/main.js"></script>
 </body>
 
 </html>
